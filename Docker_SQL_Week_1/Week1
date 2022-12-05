@@ -102,7 +102,6 @@ docker run -it \
 #Key on GCP in services permissions
 
 export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json"
-export GOOGLE_APPLICATION_CREDENTIALS="D:\Work\GIT Bash\de-zoom-1-359609-2d66324a603e.json"
 
 gcloud auth application-default login
 
@@ -118,6 +117,39 @@ advisable to destroy then apply terraform to save resources and money
 # Set-up environment on GCP
 
 SSH access & Cloud VM
+ssh-keygen -t rsa -f gcp -C 7asanen999 -b 2048
+
+// take .pub key and add it to VM
+// create ur instance as desired then copy IP and
+ssh -i ~/.ssh/gcp 7asanen999@***IP***
+
+touch config // in .ssh:
+Host # NAME
+    HostName # IP of engine
+    User # User in SSH
+    IdentityFile #SSH
+//can access env directly by: ssh #NAME 
+
+// add docker
+sudo apt-get install docker.io
+//search run it w/o sudo then run commands
+//wget right version docker compose search online run commands github
+// add it to folder with -O docker-compose
+run: chmod +x docker-compose
+//ADD to PATH:
+nano .bashrc:
+export PATH="${HOME}/bin:${PATH}"
+// forward ports on ur VS ssh run for ease access
+// add terraform
+//sftp for file transfer to ur VM
+// in ur ssh apply in the terraform directory:
+export GOOGLE_APPLICATION_CREDENTIALS=~/.gc/*FILE*.json
+gcloud auth activate-service-account --key-file $GOOGLE_APPLICATION_CREDENTIALS
+terraform init
+terraform plan
+terraform apply
+
+sudo shutdown now
 
 
 make exe executable to system

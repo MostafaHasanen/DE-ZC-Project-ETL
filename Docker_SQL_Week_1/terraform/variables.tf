@@ -4,6 +4,8 @@ locals {
 
 variable "project" {
   description = "Your GCP Project ID"
+  default = "de-zoom-359609"
+  type = string
 }
 
 variable "region" {
