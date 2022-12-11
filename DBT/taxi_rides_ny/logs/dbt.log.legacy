@@ -41,3 +41,330 @@
 2022-12-11 20:11:27.330625 (Thread-25): handling status request
 2022-12-11 20:11:27.330900 (Thread-25): 20:11:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1e4f7cc5-4adb-4008-ad8f-b5c5d2d3989c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe49e0e5fa0>]}
 2022-12-11 20:11:27.331238 (Thread-25): sending response (<Response 356 bytes [200 OK]>) to 10.0.131.255
+2022-12-11 20:21:53.313037 (MainThread): Running with dbt=1.3.1
+2022-12-11 20:21:53.922029 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2022-12-11 20:21:53.924709 (MainThread): Tracking: tracking
+2022-12-11 20:21:53.934123 (MainThread): 20:21:53  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e5539d850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2806f4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2806f3d0>]}
+2022-12-11 20:21:53.934504 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=22
+2022-12-11 20:21:53.934833 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2022-12-11 20:21:53.935005 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2022-12-11 20:21:55.620026 (Thread-13): handling status request
+2022-12-11 20:21:55.620439 (Thread-13): 20:21:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e28088b50>]}
+2022-12-11 20:21:55.621081 (Thread-13): sending response (<Response 356 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:21:55.627783 (Thread-14): handling ps request
+2022-12-11 20:21:55.628104 (Thread-14): 20:21:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e28088d00>]}
+2022-12-11 20:21:55.628686 (Thread-14): sending response (<Response 100 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:21:56.036546 (Thread-15): handling status request
+2022-12-11 20:21:56.036989 (Thread-15): 20:21:56  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e28088ca0>]}
+2022-12-11 20:21:56.037449 (Thread-15): sending response (<Response 356 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:08.082186 (Thread-16): handling status request
+2022-12-11 20:22:08.082624 (Thread-16): 20:22:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e28088f70>]}
+2022-12-11 20:22:08.083070 (Thread-16): sending response (<Response 356 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:08.088890 (Thread-17): handling ps request
+2022-12-11 20:22:08.089172 (Thread-17): 20:22:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e280889a0>]}
+2022-12-11 20:22:08.089494 (Thread-17): sending response (<Response 100 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:08.099728 (Thread-18): handling ps request
+2022-12-11 20:22:08.099977 (Thread-18): 20:22:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e28088280>]}
+2022-12-11 20:22:08.100264 (Thread-18): sending response (<Response 100 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:08.230862 (Thread-19): handling status request
+2022-12-11 20:22:08.231231 (Thread-19): 20:22:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2802f0d0>]}
+2022-12-11 20:22:08.231623 (Thread-19): sending response (<Response 339 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:08.439135 (Thread-20): handling status request
+2022-12-11 20:22:08.439525 (Thread-20): 20:22:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2802f280>]}
+2022-12-11 20:22:08.439943 (Thread-20): sending response (<Response 356 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:12.015289 (Thread-21): handling status request
+2022-12-11 20:22:12.015679 (Thread-21): 20:22:12  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2802f3d0>]}
+2022-12-11 20:22:12.016088 (Thread-21): sending response (<Response 356 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:21.758911 (Thread-22): handling ps request
+2022-12-11 20:22:21.759303 (Thread-22): 20:22:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2802f520>]}
+2022-12-11 20:22:21.759706 (Thread-22): sending response (<Response 100 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:21.765921 (Thread-23): handling status request
+2022-12-11 20:22:21.766182 (Thread-23): 20:22:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2802f610>]}
+2022-12-11 20:22:21.766501 (Thread-23): sending response (<Response 356 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:21.908792 (Thread-24): handling ps request
+2022-12-11 20:22:21.909178 (Thread-24): 20:22:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2802f7c0>]}
+2022-12-11 20:22:21.909590 (Thread-24): sending response (<Response 100 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:21.973106 (Thread-25): handling deps request
+2022-12-11 20:22:21.973451 (Thread-25): 20:22:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2802f8b0>]}
+2022-12-11 20:22:22.015965 (Thread-25): sending response (<Response 133 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:22.419122 (Thread-26): handling ps request
+2022-12-11 20:22:22.419609 (Thread-26): 20:22:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e28039160>]}
+2022-12-11 20:22:22.420414 (Thread-26): sending response (<Response 462 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:22.427911 (Thread-27): handling status request
+2022-12-11 20:22:22.428242 (Thread-27): 20:22:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804d2b0>]}
+2022-12-11 20:22:22.428576 (Thread-27): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:22.793858 (Thread-28): handling poll request
+2022-12-11 20:22:22.794263 (Thread-28): 20:22:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804daf0>]}
+2022-12-11 20:22:22.794810 (Thread-28): sending response (<Response 279 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:22.824955 (Thread-29): handling ps request
+2022-12-11 20:22:22.825252 (Thread-29): 20:22:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804d430>]}
+2022-12-11 20:22:22.825690 (Thread-29): sending response (<Response 463 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:23.344211 (Thread-30): handling status request
+2022-12-11 20:22:23.344667 (Thread-30): 20:22:23  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2803e8e0>]}
+2022-12-11 20:22:23.345095 (Thread-30): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:24.210365 (Thread-31): handling poll request
+2022-12-11 20:22:24.210850 (Thread-31): 20:22:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2803e790>]}
+2022-12-11 20:22:24.211321 (Thread-31): sending response (<Response 279 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:24.273063 (Thread-32): handling status request
+2022-12-11 20:22:24.273389 (Thread-32): 20:22:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e28039940>]}
+2022-12-11 20:22:24.273840 (Thread-32): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:24.670056 (MainThread): 20:22:24  Set downloads directory='/tmp/dbt-downloads-ncbay0e0'
+2022-12-11 20:22:24.670731 (MainThread): 20:22:24  Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+2022-12-11 20:22:24.707762 (MainThread): 20:22:24  Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+2022-12-11 20:22:24.708025 (MainThread): 20:22:24  Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+2022-12-11 20:22:24.721958 (MainThread): 20:22:24  Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+2022-12-11 20:22:24.769350 (MainThread): 20:22:24  Installing dbt-labs/dbt_utils
+2022-12-11 20:22:25.104859 (Thread-33): handling status request
+2022-12-11 20:22:25.105283 (Thread-33): 20:22:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804d100>]}
+2022-12-11 20:22:25.105741 (Thread-33): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:25.168170 (Thread-34): handling ps request
+2022-12-11 20:22:25.168456 (Thread-34): 20:22:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804d370>]}
+2022-12-11 20:22:25.168878 (Thread-34): sending response (<Response 463 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:25.530578 (Thread-35): handling status request
+2022-12-11 20:22:25.530979 (Thread-35): 20:22:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804de50>]}
+2022-12-11 20:22:25.531383 (Thread-35): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:25.604650 (Thread-36): handling poll request
+2022-12-11 20:22:25.604966 (Thread-36): 20:22:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804da30>]}
+2022-12-11 20:22:25.605455 (Thread-36): sending response (<Response 2212 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:26.361145 (Thread-37): handling status request
+2022-12-11 20:22:26.361555 (Thread-37): 20:22:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804daf0>]}
+2022-12-11 20:22:26.362031 (Thread-37): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:26.932089 (Thread-38): handling poll request
+2022-12-11 20:22:26.932539 (Thread-38): 20:22:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e28039f70>]}
+2022-12-11 20:22:26.933023 (Thread-38): sending response (<Response 279 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:27.191534 (Thread-39): handling status request
+2022-12-11 20:22:27.191907 (Thread-39): 20:22:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804d6d0>]}
+2022-12-11 20:22:27.192332 (Thread-39): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:27.480918 (Thread-40): handling ps request
+2022-12-11 20:22:27.481309 (Thread-40): 20:22:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804da00>]}
+2022-12-11 20:22:27.481848 (Thread-40): sending response (<Response 463 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:27.811712 (Thread-41): handling status request
+2022-12-11 20:22:27.812098 (Thread-41): 20:22:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804de20>]}
+2022-12-11 20:22:27.840284 (Thread-41): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:28.269629 (Thread-42): handling poll request
+2022-12-11 20:22:28.270059 (Thread-42): 20:22:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2804deb0>]}
+2022-12-11 20:22:28.270534 (Thread-42): sending response (<Response 279 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:28.660681 (Thread-43): handling status request
+2022-12-11 20:22:28.661070 (Thread-43): 20:22:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e2802f430>]}
+2022-12-11 20:22:28.661478 (Thread-43): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:28.729040 (MainThread): 20:22:28    Installed from version 0.8.0
+2022-12-11 20:22:28.729201 (MainThread): 20:22:28    Updated version available: 1.0.0
+2022-12-11 20:22:28.729360 (MainThread): 20:22:28  Sending event: {'category': 'dbt', 'action': 'package', 'label': '40018f19-c369-4dc2-b6d3-bf6a3d49b879', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45a65cb640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45a65cb6d0>]}
+2022-12-11 20:22:28.729595 (MainThread): 20:22:28  
+2022-12-11 20:22:28.729697 (MainThread): 20:22:28  Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+2022-12-11 20:22:28.963238 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:28  Partial parse save file not found. Starting full parse.
+2022-12-11 20:22:28.963581 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:28  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e28051910>]}
+2022-12-11 20:22:29.249843 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/get_payment_type_description.sql
+2022-12-11 20:22:29.250960 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/etc.sql
+2022-12-11 20:22:29.253394 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/catalog.sql
+2022-12-11 20:22:29.259136 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters.sql
+2022-12-11 20:22:29.280930 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/apply_grants.sql
+2022-12-11 20:22:29.283487 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/seed.sql
+2022-12-11 20:22:29.286563 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/incremental.sql
+2022-12-11 20:22:29.303275 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/snapshot.sql
+2022-12-11 20:22:29.304900 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/table.sql
+2022-12-11 20:22:29.311717 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/copy.sql
+2022-12-11 20:22:29.314338 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/view.sql
+2022-12-11 20:22:29.317008 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/intersect.sql
+2022-12-11 20:22:29.317412 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/position.sql
+2022-12-11 20:22:29.318023 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/escape_single_quotes.sql
+2022-12-11 20:22:29.318609 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/safe_cast.sql
+2022-12-11 20:22:29.319148 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/array_construct.sql
+2022-12-11 20:22:29.319970 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/datediff.sql
+2022-12-11 20:22:29.321145 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/timestamps.sql
+2022-12-11 20:22:29.322307 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/array_concat.sql
+2022-12-11 20:22:29.322926 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/right.sql
+2022-12-11 20:22:29.323566 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/array_append.sql
+2022-12-11 20:22:29.324160 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/split_part.sql
+2022-12-11 20:22:29.325529 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/date_trunc.sql
+2022-12-11 20:22:29.326160 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/hash.sql
+2022-12-11 20:22:29.326696 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/except.sql
+2022-12-11 20:22:29.327095 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/bool_or.sql
+2022-12-11 20:22:29.327552 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/dateadd.sql
+2022-12-11 20:22:29.328164 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/listagg.sql
+2022-12-11 20:22:29.329112 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/etc/statement.sql
+2022-12-11 20:22:29.333990 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/etc/datetime.sql
+2022-12-11 20:22:29.341957 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/apply_grants.sql
+2022-12-11 20:22:29.355192 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/freshness.sql
+2022-12-11 20:22:29.357299 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/columns.sql
+2022-12-11 20:22:29.366504 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/timestamps.sql
+2022-12-11 20:22:29.369759 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/relation.sql
+2022-12-11 20:22:29.383686 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/schema.sql
+2022-12-11 20:22:29.385863 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/persist_docs.sql
+2022-12-11 20:22:29.390239 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/metadata.sql
+2022-12-11 20:22:29.396987 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/adapters/indexes.sql
+2022-12-11 20:22:29.399666 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/get_custom_name/get_custom_database.sql
+2022-12-11 20:22:29.401154 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/get_custom_name/get_custom_schema.sql
+2022-12-11 20:22:29.403571 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/get_custom_name/get_custom_alias.sql
+2022-12-11 20:22:29.405121 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/python_model/python.sql
+2022-12-11 20:22:29.410859 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/hooks.sql
+2022-12-11 20:22:29.414477 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/configs.sql
+2022-12-11 20:22:29.416672 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/seeds/seed.sql
+2022-12-11 20:22:29.423092 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/seeds/helpers.sql
+2022-12-11 20:22:29.440089 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/tests/test.sql
+2022-12-11 20:22:29.444327 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/tests/helpers.sql
+2022-12-11 20:22:29.446040 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/tests/where_subquery.sql
+2022-12-11 20:22:29.447773 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/view/helpers.sql
+2022-12-11 20:22:29.449006 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-12-11 20:22:29.452112 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/view/create_view_as.sql
+2022-12-11 20:22:29.454333 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/view/view.sql
+2022-12-11 20:22:29.459496 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/incremental/strategies.sql
+2022-12-11 20:22:29.466038 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-12-11 20:22:29.473471 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/incremental/incremental.sql
+2022-12-11 20:22:29.483004 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-12-11 20:22:29.498164 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-12-11 20:22:29.499832 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/incremental/merge.sql
+2022-12-11 20:22:29.500374 (Thread-44): handling status request
+2022-12-11 20:22:29.514610 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/table/create_table_as.sql
+2022-12-11 20:22:29.514840 (Thread-44): 20:22:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e18765190>]}
+2022-12-11 20:22:29.518125 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/models/table/table.sql
+2022-12-11 20:22:29.518617 (Thread-44): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:29.523984 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/snapshots/strategies.sql
+2022-12-11 20:22:29.539220 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-12-11 20:22:29.540773 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/snapshots/snapshot.sql
+2022-12-11 20:22:29.551318 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/snapshots/helpers.sql
+2022-12-11 20:22:29.563122 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/generic_test_sql/not_null.sql
+2022-12-11 20:22:29.563915 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/generic_test_sql/relationships.sql
+2022-12-11 20:22:29.564737 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/generic_test_sql/unique.sql
+2022-12-11 20:22:29.565391 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/generic_test_sql/accepted_values.sql
+2022-12-11 20:22:29.566741 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/intersect.sql
+2022-12-11 20:22:29.567566 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/position.sql
+2022-12-11 20:22:29.568605 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/escape_single_quotes.sql
+2022-12-11 20:22:29.569638 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/safe_cast.sql
+2022-12-11 20:22:29.570905 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/array_construct.sql
+2022-12-11 20:22:29.572315 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/cast_bool_to_text.sql
+2022-12-11 20:22:29.573364 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/datediff.sql
+2022-12-11 20:22:29.574632 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/concat.sql
+2022-12-11 20:22:29.575607 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/length.sql
+2022-12-11 20:22:29.576565 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/any_value.sql
+2022-12-11 20:22:29.577479 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/data_types.sql
+2022-12-11 20:22:29.584070 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/array_concat.sql
+2022-12-11 20:22:29.585094 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/right.sql
+2022-12-11 20:22:29.586223 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/array_append.sql
+2022-12-11 20:22:29.587288 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/last_day.sql
+2022-12-11 20:22:29.588995 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/split_part.sql
+2022-12-11 20:22:29.591016 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/date_trunc.sql
+2022-12-11 20:22:29.592081 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/literal.sql
+2022-12-11 20:22:29.593014 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/hash.sql
+2022-12-11 20:22:29.594151 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/except.sql
+2022-12-11 20:22:29.595146 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/bool_or.sql
+2022-12-11 20:22:29.596052 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/replace.sql
+2022-12-11 20:22:29.597199 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/dateadd.sql
+2022-12-11 20:22:29.598460 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/utils/listagg.sql
+2022-12-11 20:22:29.600608 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing tests/generic/builtin.sql
+2022-12-11 20:22:29.603740 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/pivot.sql
+2022-12-11 20:22:29.604234 (Thread-45): handling poll request
+2022-12-11 20:22:29.608147 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/star.sql
+2022-12-11 20:22:29.608465 (Thread-45): 20:22:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e187831c0>]}
+2022-12-11 20:22:29.612167 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/surrogate_key.sql
+2022-12-11 20:22:29.612687 (Thread-45): sending response (<Response 2041 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:29.616015 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/get_query_results_as_dict.sql
+2022-12-11 20:22:29.618601 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/date_spine.sql
+2022-12-11 20:22:29.623107 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/get_column_values.sql
+2022-12-11 20:22:29.627914 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/groupby.sql
+2022-12-11 20:22:29.629233 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/get_tables_by_pattern_sql.sql
+2022-12-11 20:22:29.635231 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/nullcheck_table.sql
+2022-12-11 20:22:29.636734 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/get_tables_by_prefix_sql.sql
+2022-12-11 20:22:29.638430 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/get_relations_by_pattern.sql
+2022-12-11 20:22:29.641492 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/get_relations_by_prefix.sql
+2022-12-11 20:22:29.644641 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/safe_add.sql
+2022-12-11 20:22:29.646245 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/haversine_distance.sql
+2022-12-11 20:22:29.651758 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/unpivot.sql
+2022-12-11 20:22:29.659006 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/generate_series.sql
+2022-12-11 20:22:29.663084 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/nullcheck.sql
+2022-12-11 20:22:29.664646 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/sql/union.sql
+2022-12-11 20:22:29.672265 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/materializations/insert_by_period_materialization.sql
+2022-12-11 20:22:29.694635 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/jinja_helpers/pretty_time.sql
+2022-12-11 20:22:29.695864 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/jinja_helpers/slugify.sql
+2022-12-11 20:22:29.697028 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/jinja_helpers/log_info.sql
+2022-12-11 20:22:29.698210 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/jinja_helpers/pretty_log_format.sql
+2022-12-11 20:22:29.699296 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/web/get_url_parameter.sql
+2022-12-11 20:22:29.700777 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/web/get_url_path.sql
+2022-12-11 20:22:29.703239 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/web/get_url_host.sql
+2022-12-11 20:22:29.705046 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/expression_is_true.sql
+2022-12-11 20:22:29.706835 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/not_constant.sql
+2022-12-11 20:22:29.708033 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/sequential_values.sql
+2022-12-11 20:22:29.710661 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/not_null_proportion.sql
+2022-12-11 20:22:29.712685 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/at_least_one.sql
+2022-12-11 20:22:29.713923 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/equality.sql
+2022-12-11 20:22:29.717277 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/test_not_null_where.sql
+2022-12-11 20:22:29.718723 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/equal_rowcount.sql
+2022-12-11 20:22:29.720283 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/not_accepted_values.sql
+2022-12-11 20:22:29.722290 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/test_unique_where.sql
+2022-12-11 20:22:29.723671 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2022-12-11 20:22:29.732107 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/relationships_where.sql
+2022-12-11 20:22:29.734216 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/accepted_range.sql
+2022-12-11 20:22:29.736584 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/fewer_rows_than.sql
+2022-12-11 20:22:29.738317 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/unique_combination_of_columns.sql
+2022-12-11 20:22:29.740941 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/recency.sql
+2022-12-11 20:22:29.742657 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/schema_tests/cardinality_equality.sql
+2022-12-11 20:22:29.744518 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/split_part.sql
+2022-12-11 20:22:29.746314 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/length.sql
+2022-12-11 20:22:29.747577 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/current_timestamp.sql
+2022-12-11 20:22:29.751044 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/right.sql
+2022-12-11 20:22:29.753142 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/hash.sql
+2022-12-11 20:22:29.754578 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/replace.sql
+2022-12-11 20:22:29.755793 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/cast_bool_to_text.sql
+2022-12-11 20:22:29.757195 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/concat.sql
+2022-12-11 20:22:29.758249 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/_is_relation.sql
+2022-12-11 20:22:29.759386 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/identifier.sql
+2022-12-11 20:22:29.761033 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/datediff.sql
+2022-12-11 20:22:29.770302 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/dateadd.sql
+2022-12-11 20:22:29.772953 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/datatypes.sql
+2022-12-11 20:22:29.778692 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/position.sql
+2022-12-11 20:22:29.780190 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/literal.sql
+2022-12-11 20:22:29.781100 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/_is_ephemeral.sql
+2022-12-11 20:22:29.782975 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/width_bucket.sql
+2022-12-11 20:22:29.787784 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/date_trunc.sql
+2022-12-11 20:22:29.789193 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/except.sql
+2022-12-11 20:22:29.790295 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/safe_cast.sql
+2022-12-11 20:22:29.792210 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/last_day.sql
+2022-12-11 20:22:29.795536 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:29  Parsing macros/cross_db_utils/intersect.sql
+2022-12-11 20:22:29.811504 (Thread-46): handling ps request
+2022-12-11 20:22:29.832159 (Thread-46): 20:22:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e186bc880>]}
+2022-12-11 20:22:29.837796 (Thread-46): sending response (<Response 463 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:30.201070 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:30  1699: static parser successfully parsed core/dim_zones.sql
+2022-12-11 20:22:30.206850 (Thread-47): handling status request
+2022-12-11 20:22:30.214934 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:30  1699: static parser successfully parsed core/dm_monthly_zone_revenue.sql
+2022-12-11 20:22:30.215300 (Thread-47): 20:22:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e180370a0>]}
+2022-12-11 20:22:30.218276 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:30  1699: static parser successfully parsed core/fact_trips.sql
+2022-12-11 20:22:30.218750 (Thread-47): sending response (<Response 180 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:30.221541 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:30  1603: static parser failed on staging/stg_green_tripdata.sql
+2022-12-11 20:22:30.244200 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:30  1602: parser fallback to jinja rendering on staging/stg_green_tripdata.sql
+2022-12-11 20:22:30.245541 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:30  1603: static parser failed on staging/stg_yellow_tripdata.sql
+2022-12-11 20:22:30.252345 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:30  1602: parser fallback to jinja rendering on staging/stg_yellow_tripdata.sql
+2022-12-11 20:22:30.477964 (b0fdf5d7-2b8f-42f5-84b8-749a6c3ac977-handler-deps): 20:22:30  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9dd09a9f70>]}
+2022-12-11 20:22:30.955116 (Thread-48): handling poll request
+2022-12-11 20:22:30.955523 (Thread-48): 20:22:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9dd09a5970>]}
+2022-12-11 20:22:30.956048 (Thread-48): sending response (<Response 351 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:31.041879 (Thread-49): handling status request
+2022-12-11 20:22:31.042217 (Thread-49): 20:22:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e1806d670>]}
+2022-12-11 20:22:31.042735 (Thread-49): sending response (<Response 3873 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:31.288368 (Thread-50): handling status request
+2022-12-11 20:22:31.288757 (Thread-50): 20:22:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9df81010d0>]}
+2022-12-11 20:22:31.289281 (Thread-50): sending response (<Response 3856 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:31.293792 (Thread-51): handling list request
+2022-12-11 20:22:31.294080 (Thread-51): 20:22:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9df806b550>]}
+2022-12-11 20:22:31.314967 (Thread-51): 20:22:31  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9dd09c6580>]}
+2022-12-11 20:22:31.315421 (Thread-51): 20:22:31  Found 5 models, 11 tests, 0 snapshots, 0 analyses, 507 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+2022-12-11 20:22:31.315720 (Thread-51): 20:22:31  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e5123f460>]}
+2022-12-11 20:22:31.319245 (Thread-51): sending response (<Response 15898 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:32.803377 (Thread-52): handling ps request
+2022-12-11 20:22:32.803784 (Thread-52): 20:22:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9df80394f0>]}
+2022-12-11 20:22:32.804309 (Thread-52): sending response (<Response 778 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:33.144041 (Thread-53): handling status request
+2022-12-11 20:22:33.144430 (Thread-53): 20:22:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e18074190>]}
+2022-12-11 20:22:33.144928 (Thread-53): sending response (<Response 3873 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:33.315474 (Thread-54): handling poll request
+2022-12-11 20:22:33.315871 (Thread-54): 20:22:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e180744c0>]}
+2022-12-11 20:22:33.316934 (Thread-54): sending response (<Response 32030 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:33.644935 (Thread-55): handling status request
+2022-12-11 20:22:33.645332 (Thread-55): 20:22:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e18074ac0>]}
+2022-12-11 20:22:33.645902 (Thread-55): sending response (<Response 3856 bytes [200 OK]>) to 10.0.14.18
+2022-12-11 20:22:33.650470 (Thread-56): handling list request
+2022-12-11 20:22:33.650743 (Thread-56): 20:22:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9df80e05e0>]}
+2022-12-11 20:22:33.682270 (Thread-56): 20:22:33  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9dd09c3be0>]}
+2022-12-11 20:22:33.682723 (Thread-56): 20:22:33  Found 5 models, 11 tests, 0 snapshots, 0 analyses, 507 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+2022-12-11 20:22:33.682999 (Thread-56): 20:22:33  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7a712aa8-fe90-4f29-8bf2-53c04999c4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e18074850>]}
+2022-12-11 20:22:33.686217 (Thread-56): sending response (<Response 15898 bytes [200 OK]>) to 10.0.14.18
