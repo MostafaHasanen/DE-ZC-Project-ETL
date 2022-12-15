@@ -1,0 +1,54 @@
+[2022-09-11 16:34:58,552] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: FHVIngestionDag.wget scheduled__2019-06-01T06:00:00+00:00 [queued]>
+[2022-09-11 16:34:58,566] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: FHVIngestionDag.wget scheduled__2019-06-01T06:00:00+00:00 [queued]>
+[2022-09-11 16:34:58,566] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-11 16:34:58,566] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-11 16:34:58,567] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-11 16:34:58,655] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): wget> on 2019-06-01 06:00:00+00:00
+[2022-09-11 16:34:58,659] {standard_task_runner.py:52} INFO - Started process 7564 to run task
+[2022-09-11 16:34:58,664] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'FHVIngestionDag', 'wget', 'scheduled__2019-06-01T06:00:00+00:00', '--job-id', '87', '--raw', '--subdir', 'DAGS_FOLDER/FHV_ingest_19.py', '--cfg-path', '/tmp/tmpvh9164es', '--error-file', '/tmp/tmp01jnf7yp']
+[2022-09-11 16:34:58,664] {standard_task_runner.py:77} INFO - Job 87: Subtask wget
+[2022-09-11 16:34:58,864] {logging_mixin.py:109} INFO - Running <TaskInstance: FHVIngestionDag.wget scheduled__2019-06-01T06:00:00+00:00 [running]> on host 6ae512137983
+[2022-09-11 16:34:59,012] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-09-11 16:34:59,098] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=FHVIngestionDag
+AIRFLOW_CTX_TASK_ID=wget
+AIRFLOW_CTX_EXECUTION_DATE=2019-06-01T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-06-01T06:00:00+00:00
+[2022-09-11 16:34:59,099] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-09-11 16:34:59,099] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSL https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-06.parquet > /opt/***/FHV_OUT_2019-06.parquet']
+[2022-09-11 16:34:59,157] {subprocess.py:85} INFO - Output:
+[2022-09-11 16:35:20,275] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-09-11 16:35:20,346] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=FHVIngestionDag, task_id=wget, execution_date=20190601T060000, start_date=20220911T163458, end_date=20220911T163520
+[2022-09-11 16:35:20,485] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-11 16:35:20,579] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-09-15 05:21:40,237] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: FHVIngestionDag.wget scheduled__2019-06-01T06:00:00+00:00 [queued]>
+[2022-09-15 05:21:40,253] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: FHVIngestionDag.wget scheduled__2019-06-01T06:00:00+00:00 [queued]>
+[2022-09-15 05:21:40,253] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-15 05:21:40,254] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-15 05:21:40,254] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-15 05:21:40,319] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): wget> on 2019-06-01 06:00:00+00:00
+[2022-09-15 05:21:40,323] {standard_task_runner.py:52} INFO - Started process 575 to run task
+[2022-09-15 05:21:40,328] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'FHVIngestionDag', 'wget', 'scheduled__2019-06-01T06:00:00+00:00', '--job-id', '156', '--raw', '--subdir', 'DAGS_FOLDER/FHV_ingest_19.py', '--cfg-path', '/tmp/tmp2urg46_r', '--error-file', '/tmp/tmp3ypkq3xs']
+[2022-09-15 05:21:40,345] {standard_task_runner.py:77} INFO - Job 156: Subtask wget
+[2022-09-15 05:21:40,424] {logging_mixin.py:109} INFO - Running <TaskInstance: FHVIngestionDag.wget scheduled__2019-06-01T06:00:00+00:00 [running]> on host c071d865a623
+[2022-09-15 05:21:40,488] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-09-15 05:21:40,536] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=FHVIngestionDag
+AIRFLOW_CTX_TASK_ID=wget
+AIRFLOW_CTX_EXECUTION_DATE=2019-06-01T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-06-01T06:00:00+00:00
+[2022-09-15 05:21:40,538] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-09-15 05:21:40,538] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSL https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-06.parquet > /opt/***/FHV_OUT_2019-06.parquet']
+[2022-09-15 05:21:40,546] {subprocess.py:85} INFO - Output:
+[2022-09-15 05:21:49,624] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-09-15 05:21:49,684] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=FHVIngestionDag, task_id=wget, execution_date=20190601T060000, start_date=20220915T052140, end_date=20220915T052149
+[2022-09-15 05:21:49,838] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-15 05:21:49,943] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
