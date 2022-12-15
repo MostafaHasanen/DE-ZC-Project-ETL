@@ -1,28 +1,28 @@
 {{ config(materialized='table') }}
 
-with fhv_data as (
-    select *, 
-        'FHV' as service_type 
-    from {{ ref('stg_fhv') }}
+WITH fhv_data AS (
+    SELECT *, 
+        'FHV' AS service_type 
+    FROM {{ ref('stg_fhv') }}
 ),
-dim_zones as (
-    select * from {{ ref('dim_zones') }}
+dim_zones AS (
+    SELECT * FROM {{ ref('dim_zones') }}
     where borough != 'Unknown'
 )
 
-select 
+SELECT 
     fhv_data.tripid, 
     fhv_data.dispatching_base_num, 
     fhv_data.Affiliated_base_number,
     fhv_data.pickup_datetime,
     fhv_data.dropoff_datetime,
-    pickup_zone.borough as pickup_borough, 
-    pickup_zone.zone as pickup_zone, 
+    pickup_zone.borough AS pickup_borough, 
+    pickup_zone.zone AS pickup_zone, 
     fhv_data.dropoff_locationid,
-    dropoff_zone.borough as dropoff_borough, 
-    dropoff_zone.zone as dropoff_zone
-from fhv_data
--- inner join dim_zones as pickup_zone
--- on fhv_data.pickup_locationid = pickup_zone.locationid
--- inner join dim_zones as dropoff_zone
--- on fhv_data.dropoff_locationid = dropoff_zone.locationid
+    dropoff_zone.borough AS dropoff_borough, 
+    dropoff_zone.zone AS dropoff_zone
+FROM fhv_data
+-- INNER JOIN dim_zones AS pickup_zone
+-- ON fhv_data.pickup_locationid = pickup_zone.locationid
+-- INNER JOIN dim_zones AS dropoff_zone
+-- ON fhv_data.dropoff_locationid = dropoff_zone.locationid
