@@ -18,6 +18,7 @@ PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
 BUCKET = os.environ.get("GCP_GCS_BUCKET")
 
 ### Define function to strict default schema "each depends on service type" and rewrite all files schema; since parquet files schemas differ in same service
+### Solved in Spark by maintain a constant schema for all files
 
 def format_to_parquet(src_file):
     if not src_file.endswith('.csv'):
