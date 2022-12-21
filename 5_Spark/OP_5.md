@@ -70,9 +70,9 @@ spark-submit \
 # Dataproc on GCP
 Create Cluster on Dataproc in gcp, (create cluster with docker and jupyter nb)
 
-Upload your script to a lake (e.g. file: SQL_Spark_BQ.py)
+Upload your script to a lake (e.g. file: SQL_Spark.py)
 
-gsutil cp 2_SQL_Spark-BQ.py gs://dtc_data_lake_de-zoom-359609/code/Spark_Sql.py
+gsutil cp 2_SQL_Spark.py gs://dtc_data_lake_de-zoom-359609/code/Spark_Sql.py
 
 submit job on your dataproc: with the specified script
 args:
@@ -89,6 +89,8 @@ gcloud dataproc jobs submit job-command \
     other dataproc-flags \
     -- job-args
 
+Give permissiongs: Dataproc
+
 gcloud dataproc jobs submit pyspark \
     --cluster=spark-sql-cluster \
     --region=europe-west1 \
@@ -97,3 +99,15 @@ gcloud dataproc jobs submit pyspark \
         --folder_green=gs://dtc_data_lake_de-zoom-359609/FromSpark/green/2020/ \
         --folder_yellow=gs://dtc_data_lake_de-zoom-359609/FromSpark/yellow/2020/ \
         --output=gs://dtc_data_lake_de-zoom-359609/report/2020
+
+# BQ: https://cloud.google.com/dataproc/docs/tutorials/bigquery-connector-spark-example#pyspark
+
+gcloud dataproc jobs submit pyspark \
+    --cluster=de-zoomcamp-cluster \
+    --region=europe-west6 \
+    --jars=gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar
+    gs://dtc_data_lake_de-zoom-359609/code/Spark_Sql.py \
+    -- \
+        --input_green=gs://dtc_data_lake_de-zoom-359609/FromSpark/green/2020/ \
+        --input_yellow=gs://dtc_data_lake_de-zoom-359609/FromSpark/yellow/2020/ \
+        --output=trips_data_all.reports-2020
