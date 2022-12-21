@@ -12,8 +12,8 @@ parser.add_argument('--folder_yellow', required=True)
 parser.add_argument('--output', required=True)
 args = parser.parse_args()
 
-input_green = args.folder_green
-input_yellow = args.folder_yellow
+folder_green = args.folder_green
+folder_yellow = args.folder_yellow
 output = args.output
 
 spark = SparkSession.builder \
