@@ -5,7 +5,7 @@ Project on New York Taxi data provided monthly on: https://www.nyc.gov/site/tlc/
 Provided the walkthrough during the construction of this project in "OP_#" with GIT bash scripts, airflow setup steps, some learnt tricks in ways of ease Coding 
 e.g. (multiline typing, loading and edit), Airflow dags and setup provided in Airflow directory, setups of GCP required also added.
 DBT folder for dbt week with instructions notes inside: sql ordered with commands scheduled to run for production.
-Final Google studio report: https://datastudio.google.com/u/0/reporting/405b9707-af2d-4598-a790-abff5ff69e83
+Final Looker(G) studio report: https://datastudio.google.com/u/0/reporting/405b9707-af2d-4598-a790-abff5ff69e83
 ![image](https://user-images.githubusercontent.com/101864501/209440189-99ad3db1-e603-45bd-9b0c-9a68284d609e.png)
 
 Use-Case: New york Taxi data, provided on their official website, with monthly data added in parquet format (fetching the file by the link with a GIT bash operator)
