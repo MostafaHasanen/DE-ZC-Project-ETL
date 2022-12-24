@@ -6,6 +6,8 @@ Provided the walkthrough during the construction of this project in "OP_#" with 
 e.g. (multiline typing, loading and edit), Airflow dags and setup provided in Airflow directory, setups of GCP required also added.
 DBT folder for dbt week with instructions notes inside: sql ordered with commands scheduled to run for production.
 Final Google studio report: https://datastudio.google.com/u/0/reporting/405b9707-af2d-4598-a790-abff5ff69e83
+[NewYork_Taxis_Services_(Corona_Impact).pdf](https://github.com/MostafaHasanen/GCP-BQ-ETL-NY_Taxi/files/10298739/NewYork_Taxis_Services_.Corona_Impact.pdf)
+
 
 Use-Case: New york Taxi data, provided on their official website, with monthly data added in parquet format (fetching the file by the link with a GIT bash operator)
 
